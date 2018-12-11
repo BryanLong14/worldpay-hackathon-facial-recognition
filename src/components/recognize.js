@@ -54,12 +54,12 @@ class Recognize extends Component {
         const imageSrc = this.webcam.getScreenshot();
 
         axios.post(`https://api.kairos.com/recognize`, {
-            gallery_name: 'newCameriaGallery',
+            gallery_name: 'newWorldpayGallery',
             image: imageSrc
         }, {
                 headers: {
-                    app_id: <enter your app id here>,
-                    app_key: <enter your app key here>
+                    app_id: <bb05da8d>,
+                    app_key: <b38acc1ba453a3c4b4fad53730857f46>
                 }
             }).then((response) => {
                 console.log('response', response);
